@@ -1,0 +1,40 @@
+{
+  "name": "@posdim/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "contributors": [
+    {
+      "name": "Zulfikar Adnan",
+      "email": "zulfikar.adn@gmail.com",
+      "url": "https://github.com/zulfikaradnan"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version",
+    "preversion": "echo \"Use npm run release instead\" && exit 1",
+    "release:patch": "npm run release -- --release-as patch",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:major": "npm run release -- --release-as major",
+    "release:beta": "npm run release -- --prerelease beta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posdim/node-eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/posdim/node-eslint-config/issues"
+  },
+  "homepage": "https://github.com/posdim/node-eslint-config#readme",
+  "dependencies": {
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-security": "^1.4.0",
+    "standard-version": "^6.0.1"
+  },
+  "devDependencies": {
+    "standard-version": "^5.0.2"
+  }
+}
